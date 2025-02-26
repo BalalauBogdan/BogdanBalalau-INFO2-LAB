@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/nameInputText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="19dp"
+        android:hint="Name"
+        app:layout_constraintBottom_toTopOf="@+id/emailInputText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/purpleButton"
+        android:layout_width="167dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="192dp"
+        android:text="Send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messageInputText" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailInputText"
+        android:layout_width="300dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="17dp"
+        android:hint="Email"
+        app:layout_constraintBottom_toTopOf="@+id/phoneInputText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameInputText" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/messageInputText"
+        android:layout_width="301dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="63dp"
+        android:hint="Message"
+        app:layout_constraintBottom_toTopOf="@+id/purpleButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneInputText" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/phoneInputText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="15dp"
+        android:hint="Phone"
+        app:layout_constraintBottom_toTopOf="@+id/messageInputText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailInputText" />
+
+    <FrameLayout
+        android:layout_width="409dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/nameInputText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#673AB7"
+            android:foregroundTint="#B11010">
+
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="183dp"
+                android:layout_marginBottom="13dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="My First Application"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/nameDisplayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="70dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="What is your name?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purpleButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
