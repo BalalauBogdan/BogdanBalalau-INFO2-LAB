@@ -1,0 +1,55 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/introText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="În câmpia Dunării, cu câțiva ani înaintea celui de-al doilea război mondial, se pare că timpul avea cu oamenii nesfârșită răbdare; viața se scurgea aici fără conflicte mari.
+Era începutul verii.
+Familia Moromete se întorsese mai devreme de la câmp. Cât ajunseseră acasă, Paraschiv, cel mai mare dintre copii, se dăduse jos din căruță, lăsase pe alții să deshame și să dea jos uneltele, iar el întinsese pe prispă o haină veche și se culcase peste ea gemând. La fel făcuse și al doilea fiu, Nilă; intrase în casă și după ce se aruncase într-un pat, începuse și el să geamă, dar mai tare ca fratele său, ca și când ar fi fost bolnav. Al treilea băiat, Achim, se furișase în grajdul cailor, se trântise în iesle să nu-l mai găsească nimeni, iar cele două fete, Tita și Ilinca, plecaseră repede la gârlă să se scalde."
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btn_chapter1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="Chapter 1"/>
+
+    <Button
+        android:id="@+id/btn_chapter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="Chapter 2"/>
+
+    <Button
+        android:id="@+id/btn_chapter3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="Chapter 3"/>
+
+    <Button
+        android:id="@+id/btn_chapter4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="Chapter 4"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
