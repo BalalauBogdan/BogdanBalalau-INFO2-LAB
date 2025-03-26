@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <!-- Guideline pentru a evita notch-ul -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_begin="80dp"
+        android:orientation="horizontal"/>
+
+    <!-- Card cu informații despre geofencing -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_geofence_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintTop_toBottomOf="@id/guideline_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tv_geofence_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monitorizare zonă: dezactivată"
+            android:padding="20dp"
+            android:textSize="16sp"
+            android:textColor="#333333" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Buton pentru activare -->
+    <Button
+        android:id="@+id/btn_add_geofence"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="📍 Activează Geofence"
+        android:backgroundTint="#03A9F4"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/card_geofence_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
